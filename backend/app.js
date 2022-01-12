@@ -29,7 +29,7 @@ var indexRouter = require('./routes/index');
 // var adminRouter = require('./routes/Admin');
 // var userRouter =require('./routes/user');
 // var noticeRouter=require('./routes/Notification');
-// var app = express();
+var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
