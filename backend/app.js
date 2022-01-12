@@ -10,7 +10,7 @@ var nodemailer = require('nodemailer');
 
 //init router
 
-// var indexRouter = require('./routes/index');
+var indexRouter = require('./routes/index');
 // var classRoomRouter = require('./routes/Classroom');
 // var loginRouter = require('./modules/passport/loginRouter');
 // var registerRouter = require('./routes/Register');
@@ -48,7 +48,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 //init api from router in here
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 // app.use('/classroom', classRoomRouter);
 // app.use('/login', loginRouter);
