@@ -10,7 +10,7 @@ var nodemailer = require('nodemailer');
 
 //init router
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('./routes');
 // var classRoomRouter = require('./routes/Classroom');
 // var loginRouter = require('./modules/passport/loginRouter');
 // var registerRouter = require('./routes/Register');
