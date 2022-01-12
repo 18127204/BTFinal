@@ -10,26 +10,26 @@ var nodemailer = require('nodemailer');
 
 //init router
 
-var indexRouter = require('./routes/index');
-var classRoomRouter = require('./routes/Classroom');
-var loginRouter = require('./modules/passport/loginRouter');
-var registerRouter = require('./routes/Register');
-var sendEmailRouter = require('./routes/SendEmail');
-var assignmentRouter = require('./routes/Assignment');
-var pointRouter = require('./routes/Point');
-var excelRouter = require('./routes/FileExcel');
-var importExcelRouter=require('./routes/ImportExcel');
-var profileRouter = require('./routes/Profile');
-var authorizationRouter=require('./routes/Authorization');
-var googleSigninRouter = require('./routes/GoogleSignIn');
-var facebookSigninRouter = require('./routes/FacebookSignIn');
-var usersRouter = require('./routes/Eliminated/users');
-var gradeReviewRouter=require('./routes/GradeReview');
-var forgotPasswordRouter=require('./routes/ForgotPassword');
-var adminRouter = require('./routes/Admin');
-var userRouter =require('./routes/user');
-var noticeRouter=require('./routes/Notification');
-var app = express();
+// var indexRouter = require('./routes/index');
+// var classRoomRouter = require('./routes/Classroom');
+// var loginRouter = require('./modules/passport/loginRouter');
+// var registerRouter = require('./routes/Register');
+// var sendEmailRouter = require('./routes/SendEmail');
+// var assignmentRouter = require('./routes/Assignment');
+// var pointRouter = require('./routes/Point');
+// var excelRouter = require('./routes/FileExcel');
+// var importExcelRouter=require('./routes/ImportExcel');
+// var profileRouter = require('./routes/Profile');
+// var authorizationRouter=require('./routes/Authorization');
+// var googleSigninRouter = require('./routes/GoogleSignIn');
+// var facebookSigninRouter = require('./routes/FacebookSignIn');
+// var usersRouter = require('./routes/Eliminated/users');
+// var gradeReviewRouter=require('./routes/GradeReview');
+// var forgotPasswordRouter=require('./routes/ForgotPassword');
+// var adminRouter = require('./routes/Admin');
+// var userRouter =require('./routes/user');
+// var noticeRouter=require('./routes/Notification');
+// var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -48,25 +48,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 //init api from router in here
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/classroom', classRoomRouter);
-app.use('/login', loginRouter);
-app.use('/register', registerRouter);
-app.use('/sendEmail', sendEmailRouter);
-app.use('/assignment', assignmentRouter);
-app.use('/point',pointRouter);
-app.use('/fileExcel',excelRouter);
-app.use('/importExcel',importExcelRouter);
-app.use('/profile',profileRouter);
-app.use('/idenRole',authorizationRouter);
-app.use('/google-sign-in',googleSigninRouter);
-app.use('/facebook-sign-in',facebookSigninRouter);
-app.use('/gradeReview',gradeReviewRouter);
-app.use('/forgotPassword',forgotPasswordRouter);
-app.use('/admin',adminRouter);
-app.use('/user',userRouter);
-app.use('/notification',noticeRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+// app.use('/classroom', classRoomRouter);
+// app.use('/login', loginRouter);
+// app.use('/register', registerRouter);
+// app.use('/sendEmail', sendEmailRouter);
+// app.use('/assignment', assignmentRouter);
+// app.use('/point',pointRouter);
+// app.use('/fileExcel',excelRouter);
+// app.use('/importExcel',importExcelRouter);
+// app.use('/profile',profileRouter);
+// app.use('/idenRole',authorizationRouter);
+// app.use('/google-sign-in',googleSigninRouter);
+// app.use('/facebook-sign-in',facebookSigninRouter);
+// app.use('/gradeReview',gradeReviewRouter);
+// app.use('/forgotPassword',forgotPasswordRouter);
+// app.use('/admin',adminRouter);
+// app.use('/user',userRouter);
+// app.use('/notification',noticeRouter);
 
 
 
